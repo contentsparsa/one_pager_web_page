@@ -15,12 +15,12 @@
 
     body {
       min-height: 100vh;
-      background: linear-gradient(to bottom, #00167a, #000000);
+      background: linear-gradient(to bottom, #000000, #000000);
       color: #ffffff;
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      padding: 100px 0 20px;
+      padding: 50px 0 20px;
     }
 
     .container {
@@ -30,16 +30,55 @@
       margin-top: 0;
     }
 
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
     .logo {
-      width: 200px;
-      margin-bottom: 80px;
+      width: 150px;
+      flex-shrink: 0;
+       margin-right: 80px;
+       margin-left: 20px;
+    }
+    
+     /* Divider */
+    .divider {
+      width: 425px;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.2);
+      margin-bottom: 50px;
+    }
+
+    .brand-text {
+      flex: 1;
+      font-size: 14px;
+      line-height: 1.6;
+      opacity: 0.9;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     h1 {
       font-size: 24px;
-      margin-bottom: 10px;
+      margin: 10px 0 10px;
     }
 
+  
     p {
       font-size: 14px;
       opacity: 0.8;
@@ -89,15 +128,23 @@
 
   <div class="container">
 
-    <!-- Logo -->
-    <img src="logo.png" alt="Company Logo" class="logo">
+    <div class="header-row">
+      <img src="logo.png" alt="Company Logo" class="logo">
+      <div class="brand-text">
+        
+        <span>Inspired by innovation,</span>
+        <span>driven by excellence.</span>
+      </div>
+  
+    </div>
+   <div class="divider"></div> 
 
     <!-- Heading -->
     <h1>Explore More</h1>
     <p>Discover our product in detail through the options below</p>
     
      <div class="card">
-      <a href="https://sparsadigital.in/portfolio/how-sweet-stores-upgrade-pricing-with-esl-solutions/">Project Highlights</a>
+      <a href="https://www.youtube.com/@sparsa-digital-pvt-ltd">Latest Installations</a>
       <span>Explore the key features and capabilities of our solution.</span>
     </div>
 
@@ -115,15 +162,10 @@
     -->
 
     <div class="card">
-      <a href="https://sparsadigital.in/products/digital-price-tags/">Explore Product</a>
-      <span>Explore the product in detail</span>
-    </div>
-    
-   <div class="card">
       <a href="https://sparsadigital.in">Visit Website</a>
       <span>Explore more products</span>
     </div>
-    
+
     <div class="card">
         <a href="mailto:business@sparsatv.in">Email Us</a>
         <span>Send us your queries anytime</span>
@@ -133,6 +175,11 @@
      <a href="tel:+918043063109">Call Us</a>
      <span>Speak directly with our team</span>
    </div>
+
+   <div class="card">
+  <a href="https://fssai.gov.in/">FSSAI Guidelines</a>
+  <span>View official food safety rules & regulations</span>
+</div>
 
   </div>
 
